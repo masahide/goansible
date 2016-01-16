@@ -1,0 +1,14 @@
+---
+- hosts: all
+  vars_files:
+    - common_vars.yml
+    - [ '{{facter_operatingsystem.yml}}', 'default_os.yml' ]
+  vars:
+    answer: "Wuh, I think so"
+    port: 5150
+    hoge: |
+        #!/bin/bash
+        hoge
+        fuga
+  roles:
+    - build_essential

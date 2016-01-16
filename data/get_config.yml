@@ -1,0 +1,13 @@
+# mkdir tscuser home dir
+# vim:set ts=2 sts=2 sw=2 tw=0:
+- hosts: all
+  connection: local
+
+
+  tasks:
+  - name: get date
+    register: date
+    shell: 
+      ignore_changed: true
+      command: date '+%Y%m%d-%H%M%S'
+

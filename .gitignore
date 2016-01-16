@@ -1,0 +1,6 @@
+*.test
+.vagrant/
+goansible
+goansible-linux-amd64
+scratch/
+bindata.go

@@ -1,0 +1,8 @@
+---
+
+- tasks:
+  - name: Run on vagrant
+    goansible:
+      target: :vagrant
+      playbook: on_vagrant.yml
+      dev: true

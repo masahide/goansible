@@ -1,0 +1,11 @@
+---
+# mkdir tscuser home dir
+# vim:set ts=2 sts=2 sw=2 tw=0:
+
+- name: ng
+  shell:
+    command: |
+        echo hoge 1>&2
+        /bin/false
+
+
